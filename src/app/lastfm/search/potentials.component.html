@@ -1,0 +1,14 @@
+<div class="grid-container">
+  <div [class]="gridClass">
+    <div class="cell cell-artist" *ngFor="let artist of potentials | limit: limit">
+      <div class="card text-center">
+        <div class="card-divider text-center">
+          {{ artist.name }}
+        </div>
+        <a [routerLink]="['/artist', artist.name]" class="text-center">
+          <img [src]="artist.image?.extralarge">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<simple-error [error]="error$ | async"></simple-error>
+
+<artist-view [artist]="artist$ | async"></artist-view>
+
+<div *ngIf="albums$ | async as albums">
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h3>Popular Albums</h3>
+    </div>
+  </div>
+  <album-list [albums]="albums"></album-list>
+</div>
