@@ -6,6 +6,6 @@
 export const environment = {
   production: false,
   apiKey: 'e6c43b38975fa0ec31650ff88acb2f32', // YOUR_API_KEY
-  endPoint: 'http://ws.audioscrobbler.com/2.0/',
+  endPoint: 'http://sleepy-depths-33434.herokuapp.com/api',
   format: 'json'
 };
