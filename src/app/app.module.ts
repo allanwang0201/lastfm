@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LastFMModule } from './lastfm/lastfm.module';
 import { routing } from './app.routing';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
@@ -16,7 +16,8 @@ import 'rxjs/add/operator/mergeMap';
   imports: [
     BrowserModule,
     routing,
-    LastFMModule
+    LastFMModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

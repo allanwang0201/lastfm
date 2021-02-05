@@ -2,7 +2,7 @@ import {
   Component,
   Input,
   OnInit,
-  ChangeDetectionStrategy
+  ChangeDetectionStrategy,
 } from '@angular/core';
 
 import { Artist } from './../lastfm.service';
@@ -13,6 +13,8 @@ import { Artist } from './../lastfm.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Potentials implements OnInit {
+
+  p: number = 1;
 
   _potentials: Array<Artist>;
 

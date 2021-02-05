@@ -35,15 +35,17 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/operator/merge';
 import { SearchFormComponent } from './search/search-form/search-form.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    HttpClientModule,
-    lastFMRouting
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        HttpClientModule,
+        lastFMRouting,
+        NgxPaginationModule
+    ],
   declarations: [
     ArtistComponent,
     AlbumComponent,

@@ -121,7 +121,7 @@ export class LastFM {
   assignParams: Function;
 
   constructor( @Inject('LastFMConfig') private config: LastFMConfig, public http: HttpClient) {
-    config.endPoint || (config.endPoint = 'http://sleepy-depths-33434.herokuapp.com/api');
+    config.endPoint || (config.endPoint = 'https://sleepy-depths-33434.herokuapp.com/api');
     config.format || (config.format = 'json');
     this.assignParams = this.partially(this.assign, { format: config.format, api_key: config.apiKey });
   }

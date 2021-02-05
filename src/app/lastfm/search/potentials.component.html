@@ -1,6 +1,6 @@
 <div class="grid-container">
   <div [class]="gridClass">
-    <div class="cell cell-artist" *ngFor="let artist of potentials | limit: limit">
+    <div class="cell cell-artist" *ngFor="let artist of potentials | paginate: { itemsPerPage: 20, currentPage: p }">
       <div class="card text-center">
         <div class="card-divider text-center">
           {{ artist.name }}
@@ -11,4 +11,6 @@
       </div>
     </div>
   </div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
 </div>
